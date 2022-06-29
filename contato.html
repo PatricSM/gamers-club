@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="icon" href="imagens/logo.png" type="image/png">
+	<title>Gamers Club</title>
+</head>
+<body>
+	<header>
+		<div class="caixa">	
+			<h1>
+				<img src="imagens/logo.png" class="logo">
+			</h1>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="quemsomos.html">Quem Somos</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li class="list">
+				<b></b>
+				<b></b>
+				<a href="videogames.html">
+					<span class="ico"><ion-icon name="game-controller"></ion-icon></span>
+					<span class="menu-titulo">Video Games</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="dicasdegames.html">
+					<span class="ico"><ion-icon name="bulb-outline"></ion-icon></span>
+					<span class="menu-titulo">Dicas de Games</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="novosgames.html">
+					<span class="ico"><ion-icon name="ticket-outline"></ion-icon></span>
+					<span class="menu-titulo">Novos Games</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="galeria.html">
+					<span class="ico"><ion-icon name="images-outline"></ion-icon></span>
+					<span class="menu-titulo">Galeria</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="jogar.html">
+					<span class="ico"><ion-icon name="game-controller-outline"></ion-icon></span>
+					<span class="menu-titulo">Jogar</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="ranking.html">
+					<span class="ico"><ion-icon name="bar-chart-outline"></ion-icon></span>
+					<span class="menu-titulo">Ranking</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="e-sports.html">
+					<span class="ico"><ion-icon name="trophy-outline"></ion-icon></span>
+					<span class="menu-titulo">E-Sports</span>
+				</a>
+			</li>
+			<li class="list ">
+				<a href="https://www.reddit.com/r/GameNoticias/" target="_blank">
+					<span class="ico"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+					<span class="menu-titulo">Fórum</span>
+				</a>
+			</li>
+		</ul>	
+	</div>
+
+	<div class="alternar">
+		<ion-icon name="menu-outline" class="aberto"></ion-icon>
+		<ion-icon name="close-outline" class="fechado"></ion-icon>
+	</div>
+	<div>
+		<a href="https://discord.gg/DSA4aFJN" target="_blank" class="discord-link">
+		<img src="imagens/discord-icon.png"></a>
+	</div>
+	
+	<div>
+		<a href="https://chat.whatsapp.com/KJSxUI1sEXiEy9bq7MoVUX" target="_blank" class="whatsapp-link">
+		<img src="imagens/whatsapp.png"></a>
+	</div>
+
+	<main>
+		<div class="corpo">
+			<section class="principal">
+				<div class="fomulario">
+					<form id="formulario" method="post" enctype="multipart/form-data" autocomplete="off" action="">
+
+						<h3 class="titulo-contato">Entre em contato conosco:</h3>
+
+						<fieldset class="contato">
+							<legend>Dados Pessoais:</legend>
+
+							<label for="nomesobrenome">Nome:<input type="text" name="name" id="nomesobrenome" class="input-padrao" required placeholder="Michael Scott" ></label>
+							
+
+							<label for="email">Email:<input type="email" name="email" id="email"class="input-padrao" required placeholder="seuemail@dominio.com"></label>
+							
+
+							<label for="telefone">Telefone:<input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"></label>
+							
+
+							<label for="mensagem">Mensagem:<textarea cols="30" rows="10" name="mensagem" id="mensagem" class="input-padrao" required></textarea></label>
+							
+						</fieldset>
+
+						<fieldset class="contato">
+							<legend>Como prefere o nosso contato?</legend>
+							<label for="radio-email"><input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+							
+							<label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
+							
+							<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+						</fieldset>
+
+						<fieldset class="contato">
+							<label for="novidades"><input type="checkbox" name="novidades" class="checkbox" id="novidades" checked>  Gostaria de receber nossas novidades por email?</label>
+						</fieldset>
+
+
+						<input type="submit" name="envio" value="Enviar Formulário" class="enviar">
+					</form>
+				</div>
+			</section>
+
+			<section class="mapa">
+				<h3 class="titulo-contato">Onde ficamos:</h3>
+
+				<p>Caso queira conhecer nossa sede sinta-se a vontade.</br> Estamos localizados no coração da cidade.</p>
+
+				<div class="mapa-contato">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0269516456533!2d-51.22943108488514!3d-30.03608463188531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197903ecd9f50b%3A0xf28586432cd5c4ec!2sFaculdade%20Senac%20Porto%20Alegre%20(Campus%20II)!5e0!3m2!1spt-PT!2sbr!4v1655421682021!5m2!1spt-PT!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				
+			</section>
+		</div>
+
+	</main>
+	
+
+
+	<footer>
+		<img src="imagens/Logo.png" class="logo">
+		<p class="copyright">&copy; Gamers Club. PSM-EPBL-RMG-WADS </p>
+	</footer>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="javascript/menu-lateral.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,753 @@
+/* ------------------------------- Font ------------------------------------------- */
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	background-image: url(imagens/background.jpg);
+}
+
+/* ------------------------------ Cabeçalho --------------------------------------- */
+header{
+	background-color: #2e2e2e;
+	padding: 20px 0;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+header:hover{
+	opacity: 1;
+}
+
+.caixa{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+.logo{
+	width: 90px;
+}
+
+nav{
+	position: absolute;
+	top: 25px;
+	right: 0;
+	margin-bottom: 150px;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 1s;
+}
+
+nav a:hover{
+	color: #016dff;
+	font-size: 28px;
+}
+
+nav a:active{
+	color: #dc3d4d;
+}
+
+nav a:focus{
+	color: #dc3d4d;
+}
+
+/* ------------------------------- Página Inicial --------------------------------- */
+.banner{
+	width: 100%;
+	padding-top: 110px;
+}
+
+/* --------- Texto com Título = Pesquisa --------- */
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	clear: left;
+	line-height: 1.4em;
+
+}
+
+.titulo-secundario{
+	text-align: center;
+	font-size: 1.5em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+img + p{
+	font-size: 15px;
+	font-style: italic;
+}
+
+.corpo{
+	padding-top: 110px;
+}
+
+.principal{
+	padding: 3em 20px;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	box-shadow: 20px 20px 50px black;
+}
+
+.principal p{
+	margin: 0 0 1em;
+	line-height: 30px;
+}
+
+.pesquisa{
+	width: 100%;
+}
+
+p.referencia{
+	text-decoration: none;
+	font-size: 15px;
+	font-style: italic;
+}
+
+
+/* --------- Opções em Box --------- */
+.opcoes{
+	width: 940px;
+	margin: 0 auto;
+	padding: 10px 0 40px 0;
+
+}
+
+.opcoes li{
+	display: inline-block;
+	text-align: center;
+	width: 22%;
+	vertical-align: center;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	filter: drop-shadow(20px 10px 10px black);
+	opacity: 0.6;
+	transition: 600ms;
+	margin: 10px ;
+}
+
+.opcoes li:hover{
+	opacity: 1;
+	filter: drop-shadow(1px 1px 1px 2px  black);
+}
+
+/* ------------------------------- Menu Lateral -------------------------------------- */
+
+.menu{
+	position: fixed;
+	top: 107px;
+	bottom: 0px;
+	left: 20px;
+	width: 70px;
+	box-sizing: initial;
+	border-radius: 10px;
+	border-left: 5px solid #2e2e2e;
+	background: #2e2e2e;
+	transition: width 300ms;
+	overflow-x: hidden;
+	opacity: 0.6;
+}
+.menu:hover{
+	opacity: 1;
+}
+
+.menu.ativo{
+	width: 250px;
+}
+
+.menu ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 20px;
+}
+
+
+.menu ul li{
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.menu ul li:hover{
+	background: whitesmoke;
+}
+
+.menu ul li.ativo{
+	background: whitesmoke;
+}
+
+
+.menu ul li a{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.menu ul li a:hover{
+	color: #2e2e2e;
+}
+
+.menu ul li.ativo a{
+	color: #2e2e2e;
+}
+
+.menu ul li a .ico{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 30px;
+	line-height: 70px;
+	text-align: center;
+
+}
+
+.menu ul li a .ico ion-icon{
+	font-size: 1.5em;
+}
+
+.menu ul li a .menu-titulo{
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 50px;
+	white-space: normal;
+}
+
+.alternar{
+	position: fixed;
+	bottom: 160px;
+	right: 40px;
+	width: 48px;
+	height: 48px;
+	background: whitesmoke;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.6;
+	filter: drop-shadow(5px 5px 10px black);
+}
+
+.alternar:hover{
+	opacity: 1;
+	width: 53px;
+	height: 53px;
+	filter: drop-shadow(5px 5px 10px black);
+}
+
+.alternar.ativo{
+	background: #016dff;
+}
+
+.alternar ion-icon{
+	position: absolute;
+	color: #2e2e2e;
+	font-size: 34px;
+	display: none;
+}
+
+.alternar ion-icon.aberto , .alternar.ativo ion-icon.fechado{
+	display: block;
+}
+
+.alternar.ativo ion-icon.aberto , .alternar ion-icon.fechado{
+	display: none;
+}
+
+
+
+/* ------------------------------- Whatsapp -------------------------------------- */
+
+.whatsapp-link{
+	position: fixed;
+	width: 48px;
+	height: 48px;
+	bottom: 40px;
+	right: 40px;
+	opacity: 0.6;
+	transition: 200ms;
+	filter: drop-shadow(5px 5px 10px black);
+	z-index: 100;
+}
+
+.whatsapp-link:hover{
+	opacity: 1;
+	width: 53px;
+	height: 53px;
+}
+
+
+
+/* ------------------------------- Discord -------------------------------------- */
+
+.discord-link{
+	position: fixed;
+	width: 48px;
+	height: 48px;
+	bottom: 100px;
+	right: 40px;
+	opacity: 0.6;
+	transition: 300ms;
+	filter: drop-shadow(5px 5px 10px black);
+	z-index: 100;
+}
+
+.discord-link:hover{
+	opacity: 1;
+	width: 53px;
+	height: 53px;
+}
+
+
+
+
+/* ------------------------------- Rodapé ---------------------------------------- */
+footer{
+	text-align: center;
+	background-color: #2e2e2e;
+	padding: 40px 0;
+}
+
+footer img.logo{
+	width: 100px;
+}
+
+footer .copyright{
+	font-size: 15px;
+	color: whitesmoke;
+	margin: 20px 0 0;
+	font-weight: bold;
+}
+
+/* ------------------------------- Página Quem Somos ---------------------------- */
+
+
+
+
+
+
+/* ------------------------------- Página Contato ------------------------------- */
+/* --------- Formulário para Contato --------- */
+#formulario{
+	display: inline-block;
+	text-align: center;
+}
+
+.contato {
+	display: inline;
+	font-size:20; 
+	font-weight:bold; 
+	border:2px solid #2e2e2e; 
+	width: 600px; 
+	margin:20px auto;
+	padding: 10px;
+	box-shadow: 5px 5px 20px black;
+	background-color: whitesmoke;
+}
+
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 90%;
+}
+
+.enviar {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #2e2e2e;
+	color: whitesmoke;
+	border:  none;
+	width:550px;
+	height:30px; 
+	font-size:20px; 
+	font-weight:bold; 
+	margin:20px 20px;
+	box-shadow: 5px 5px 15px black;;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.enviar:hover {
+	background-color: #016dff;
+
+}
+
+.titulo-contato{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	clear: left;
+	line-height: 1.4em;
+	margin-top: 10px;
+}
+/* --------- Mapa de Localização --------- */
+
+.mapa{
+	background-color: whitesmoke;
+	width: 940px;
+	margin: 50px auto;
+	box-sizing: border-box;
+	box-shadow: 20px 20px 50px black;
+	
+}
+
+.mapa-contato{
+	width: 840px;
+	margin: 0 auto;
+	padding: 10px 10px 30px 10px;
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+
+/* ------------------------------- Página Video Games --------------------------- */
+
+.plataformas{
+	margin: 0 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.plataformas .tab{
+	position: relative;
+	background: whitesmoke;
+	padding: 0 20px 20px;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.plataformas .tab input{
+	appearance:  none;
+}
+
+.plataformas .tab label{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.plataformas .tab label::after{
+	content: '+';
+	position: absolute;
+	right: 30px;
+	font-size: 2em;
+	color: rgba(0, 0, 0, 0.5);
+	transition: transform 1s;
+}
+
+.plataformas .tab:hover label::after{
+	color: #2e2e2e;
+}
+
+.plataformas .tab input:checked ~ label::after{
+	transform: rotate(135deg);
+}
+
+.plataformas .tab label h3{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	margin-right: 10px;
+
+}
+
+.plataformas .tab label h4{
+	position: relative;
+	font-weight: bolder;
+	color: #2e2e2e;
+	z-index: 10;
+}
+
+.plataformas .tab .content{
+	max-height: 0;
+	transition: 1s;
+	overflow: hidden;
+
+}
+
+.plataformas .tab input:checked ~ .content{
+	max-height: 200vh;
+}
+
+.plataformas .tab .content h4{
+	position: relative;
+	font-weight: bolder;
+	color: #2e2e2e;
+	z-index: 10;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.plataformas .tab .content h4 a{
+	text-decoration: none;
+	color: #2e2e2e;
+}
+
+.plataformas .tab .content img{
+	width: 100%;
+}
+
+.plataformas .tab .content p{
+	position: relative;
+	padding: 10px 0;
+	color: #2e2e2e;
+	z-index: 10;
+}
+
+
+
+
+
+/* ------------------------------- Página Dicas de Games ------------------------ */
+
+div .dicasjogos h1{
+	font-size: 48px;
+	color: darkred;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+div .dicasjogos .pt{
+	font-size: 16px;
+	text-align: center;
+	padding-bottom:10px;
+}
+
+div .dicasjogos h2{
+	font-size: 28px;
+	color: darkblue;
+}
+
+
+
+/* ------------------------------- Página Novos Games --------------------------- */
+
+div .lançamentos h1{
+	font-size: 48px;
+	color: darkred;
+	text-align: center;
+}
+
+div .lançamentos .pt{
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+div .lançamentos h2{
+	font-size: 28px;
+	color: darkblue;
+}
+
+div .lançamentos h3{
+	font-size: 18px;
+}
+
+div h2.previa{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: darkred;
+	text-align: center;
+	font-size:30px;
+}
+
+div ul.listaprevia{
+	color: grey;
+	text-align: center;
+}
+
+
+
+
+
+/* ------------------------------- Página Galeria ------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------- Página Jogar --------------------------------- */
+
+.jogoVelha {
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#jogadorAtual{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+table {
+	width:550px; 
+	height:350px; 
+	border:1px solid black;
+	margin: 20px auto;
+	box-shadow: 10px 10px 20px black;
+}
+
+
+table tr {
+	background-color:#2e2e2e; 
+	font:bold 60px 'Montserrat', sans-serif;; 
+	color:whitesmoke;
+	text-align: center;
+}
+
+table tr td {
+	text-align: center;
+	width:33.33%
+}
+
+table tr td:hover {
+	cursor:pointer
+}
+
+.botao {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #2e2e2e;
+	color: whitesmoke;
+	border:  none;
+	width:550px;
+	height:30px; 
+	font-size:20px; 
+	font-weight:bold; 
+	margin:20px 20px;
+	box-shadow: 5px 5px 15px black;;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.botao:hover {
+	background-color: #016dff;
+
+}
+
+.players {
+	font-size:20; 
+	font-weight:bold; 
+	border:2px solid #2e2e2e; 
+	width: 600px; 
+	margin:20px auto;
+	padding: 10px;
+	box-shadow: 5px 5px 20px black;
+	background-color: whitesmoke;
+}
+
+
+
+
+
+
+/* ------------------------------- Página Ranking ------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------- Página E-Sports ------------------------------ */
+
+
+/* ---------Cadastro Para Campeonatos --------- */
+
+#formulario{
+	display: inline-block;
+	text-align: center;
+}
+
+.cadastrar{
+	font-size:20; 
+	font-weight:bold; 
+	border:2px solid #2e2e2e; 
+	width: 600px; 
+	margin:20px auto;
+	padding: 10px;
+	box-shadow: 5px 5px 20px black;
+	background-color: whitesmoke;
+}
+
+.titulo-torneio{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	clear: left;
+	line-height: 1.4em;
+	margin-top: 10px;
+}
+
+.torneios{
+	border:2px solid #2e2e2e; 
+	width: 600px; 
+	margin:20px auto;
+	box-shadow: 5px 5px 20px black;
+	background-color: whitesmoke;
+}
+
+.contato {
+	display: inline;
+	font-size:20; 
+	font-weight:bold; 
+	border:2px solid #2e2e2e; 
+	width: 600px; 
+	margin:20px auto;
+	padding: 10px;
+	box-shadow: 5px 5px 20px black;
+	background-color: whitesmoke;
+}
+
+
+
+
+/* --------------------------- Mini Responsividade --------------------------- */
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
