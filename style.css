@@ -349,6 +349,28 @@ footer .copyright{
 
 /* ------------------------------- Página Quem Somos ---------------------------- */
 
+.titulo-quemsomos{
+	margin-bottom: 50px;
+}
+
+.alunos{
+	display: inline;
+	text-align: center;
+
+}
+
+.alunos .alunos-img-nome{
+	display: inline-block;
+	padding: 10px;
+	color: darkred;
+	text-shadow: #2e2e2e;
+	font-weight: bold;
+}
+
+.alunos .alunos-img-nome p img{
+	width: 200px;
+	height: 200px;
+}
 
 
 
